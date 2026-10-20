@@ -1,19 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="cs">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dort</title>
+  <link rel="icon" type="image/png" href="/images/durt.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
+
+  <nav class="navbar lg:navbar-expand site-nav" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#domu">
+        <img src="/images/01-macaque-selfie-naruto-indonesia.jpg" alt="Logo MonkeyLand" width="48" height="48">
+        <span class="brand-copy"><strong>MonkeyLand</strong><small>Chovatelská stanice</small></span>
+      </a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Otevřít navigaci"><span class="navbar-toggler-icon"
+          aria-hidden="true"></span></button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarMenu" aria-labelledby="navbarMenuLabel">
+        <div class="drawer-header">
+          <h5 class="drawer-title" id="navbarMenuLabel">MonkeyLand</h5><button type="button" class="btn-close"
+            data-bs-dismiss="drawer" aria-label="Zavřít"></button>
+        </div>
+        <div class="drawer-body d-flex align-items-lg-center gap-3">
+          <ul class="nav navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#domu">Domů</a></li>
+            <li class="nav-item"><a class="nav-link" href="#zvirata">Naše zvířata</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mladata">Štěňata/Koťata/Mláďata</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pece">O plemeni & Péče</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          </ul>
+          <div class="nav-actions d-flex gap-2"><a class="btn-solid btn-purple rounded-pill" href="#mladata"><i
+                class="bi bi-people-fill"></i> Mláďata</a><a class="btn-outline rounded-pill contact-button"
+              href="#kontakt"><i class="bi bi-envelope"></i> Kontakt</a></div>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+
+  <header class="hero" id="domu">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">CHOVATELSKÁ STANICE MONKEYLAND</p>
+        <h1>Zdravá mláďata,<br><span>šťastný život</span></h1>
+        <p class="hero-description">Chováme s láskou, respektem a zodpovědností. Naším cílem je zdravé, vyrovnané a
+          socializované mládě, které najde ten správný domov.</p>
+        <div class="d-flex flex-wrap gap-3"><a class="btn-solid btn-purple rounded-pill" href="#mladata"><i
+              class="bi bi-people-fill"></i> Dostupná mláďata <i class="bi bi-arrow-right"></i></a><a
+            class="btn-outline hero-secondary rounded-pill" href="#onas">Poznat náš chov</a></div>
+      </div>
+      <div class="hero-note">Malí opičáci<br>s velkým srdcem <i class="bi bi-heart"></i></div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+
+    <section class="intro-panel" id="onas">
+      <div class="row g-4">
+        <div class="col-lg-4 about-column" id="pece">
+          <h2><i class="bi bi-paw-fill"></i> Krátce o nás</h2>
+          <p>Jsme rodinná chovatelská stanice, kde se o naše opičky staráme s maximální péčí. Dbáme na kvalitní zázemí,
+            správnou socializaci a pravidelné veterinární kontroly. Každé mládě od nás odchází zdravé, vyrovnané a
+            připravené na nový domov.</p>
+          <div class="about-features row g-2">
+            <div class="col-4"><i class="bi bi-house-door"></i><span>Prostorné<br>zázemí</span></div>
+            <div class="col-4"><i class="bi bi-heart"></i><span>Individuální<br>péče</span></div>
+            <div class="col-4"><i class="bi bi-shield-check"></i><span>Pravidelné<br>zdravotní testy</span></div>
+          </div>
+        </div>
+        <div class="col-lg-8" id="mladata">
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+            <h2 class="mb-0"><i class="bi bi-emoji-smile-fill"></i> Aktuálně k odběru</h2><a class="all-animals"
+              href="#zvirata">Všechna mláďata <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="row row-cols-2 row-cols-md-4 g-3" id="zvirata">
+            <div class="col">
+              <article class="card monkey-card h-100">
+                <div class="monkey-photo"><img src="/images/jamie-haughton-Z05GiksmqYU-unsplash.jpg" alt="Opička Samík"><span
+                    class="status free">Volné</span></div>
+                <div class="card-body">
+                  <h3>Samík</h3>
+                  <p>12. 6. 2025</p><a href="#kontakt" class="btn-solid theme-dark monkey-detail">Detail</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card monkey-card h-100">
+                <div class="monkey-photo"><img src="/images/Snubby-in-Yunnan-Myanmar-borderlands-1-scaled-aspect-ratio-1920-1300.jpg" alt="Opička Lili"><span
+                    class="status reserved">Rezervace</span></div>
+                <div class="card-body">
+                  <h3>Lili</h3>
+                  <p>3. 7. 2025</p><a href="#kontakt" class="btn-solid theme-dark monkey-detail">Detail</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card monkey-card h-100">
+                <div class="monkey-photo"><img src="/images/Kisumu01_PH.jpg" alt="Opička Kiki"><span class="status home">V novém
+                    domově</span></div>
+                <div class="card-body">
+                  <h3>Kiki</h3>
+                  <p>20. 6. 2025</p><a href="#kontakt" class="btn-solid theme-dark monkey-detail">Detail</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card monkey-card h-100">
+                <div class="monkey-photo"><img src="/images/photo-1572181784300-af56dd331250_1786084026224_1786084043619_e18ba7a5-3f18-49c9-8999-1f3434aeb31b_1786084673104_72e9c2fa-531a-410b-b863-62b7bde47c22.webp" alt="Opička Bubu"><span
+                    class="status free">Volné</span></div>
+                <div class="card-body">
+                  <h3>Bubu</h3>
+                  <p>15. 7. 2025</p><a href="#kontakt" class="btn-solid theme-dark monkey-detail">Detail</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Výhody -->
+    <section class="benefits-panel">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-3">
+          <h2>Proč si vybrat právě nás?</h2>
+          <p>Důvěra, zkušenosti a transparentnost.</p>
+        </div>
+        <div class="col-6 col-lg">
+          <div class="benefit"><i class="bi bi-patch-check"></i>
+            <div><strong>Členství v klubu</strong><small>ČMKU / ČSCH</small></div>
+          </div>
+        </div>
+        <div class="col-6 col-lg">
+          <div class="benefit"><i class="bi bi-shield-check"></i>
+            <div><strong>Zdravotní testy</strong><small>DNA, genetika, viry</small></div>
+          </div>
+        </div>
+        <div class="col-6 col-lg">
+          <div class="benefit"><i class="bi bi-calendar3"></i>
+            <div><strong>10+ let</strong><small>praxe</small></div>
+          </div>
+        </div>
+        <div class="col-6 col-lg">
+          <div class="benefit"><i class="bi bi-star"></i>
+            <div><strong>100+</strong><small>spokojených rodin</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recenze a kontakt -->
+    <section class="row g-4 lower-section">
+      <div class="col-lg-7">
+        <h2 class="lower-heading"><i class="bi bi-quote"></i> Co o nás říkají</h2>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <article class="review-card"><img src="/images/74d9c09e-f37c-4161-adc4-ced5bd2a4a45.webp" alt="Tereza" class="review-avatar">
+              <div>
+                <p>„Naše opička od MonkeyLandu je úžasná! Profesionální přístup, skvělá komunikace a hlavně zdravé a
+                  spokojené mládě. Děkujeme!“</p><small>– Tereza K.</small>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="review-card"><img src="/images/muz-ktery-miluje-prilis-mnoho-zenam-neimponuje-1.jpg" alt="Martin" class="review-avatar">
+              <div>
+                <p>„Celý proces proběhl hladce, vše bylo perfektně připravené. Opravdu cítíte, že jim záleží na
+                  zvířatech i na nových majitelích.“</p><small>– Martin P.</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5" id="kontakt">
+        <div class="row g-3">
+          <div class="col-md-5">
+            <h2 class="contact-heading"><i class="bi bi-envelope-fill"></i> Kontaktujte nás</h2>
+            <p><i class="bi bi-telephone"></i> +420 777 123 456</p>
+            <p><i class="bi bi-envelope"></i> info@monkeyland.cz</p>
+            <p><i class="bi bi-clock"></i> Po – Ne: 8:00 – 18:00</p>
+          </div>
+          <div class="col-md-7">
+            <form class="contact-form"
+              onsubmit="event.preventDefault(); alert('Toto je ukázkový formulář. Pro odesílání zpráv je potřeba připojit službu nebo server.');">
+              <label class="visually-hidden" for="name">Vaše jméno</label><input class="form-control" id="name"
+                name="name" placeholder="Vaše jméno" required><label class="visually-hidden" for="email">Váš
+                e-mail</label><input class="form-control" id="email" name="email" type="email" placeholder="Váš e-mail"
+                required><label class="visually-hidden" for="message">Vaše zpráva</label><textarea class="form-control"
+                id="message" name="message" rows="3" placeholder="Vaše zpráva / dotaz" required></textarea><button
+                class="btn-solid btn-purple rounded-pill w-100" type="submit">Odeslat <i
+                  class="bi bi-send-fill"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-4"><a href="#domu" class="footer-brand"><img src="/images/01-macaque-selfie-naruto-indonesia.jpg" width="48" height="48"
+              alt="MonkeyLand"><span><strong>MonkeyLand</strong><small>Chovatelská stanice</small></span></a></div>
+        <div class="col-md-4 text-center social-links"><a href="#" aria-label="Facebook"><i
+              class="bi bi-facebook"></i></a><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+            href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" aria-label="TikTok"><i
+              class="bi bi-tiktok"></i></a></div>
+        <div class="col-md-4 text-md-end text-center footer-legal">
+          <div><a href="#">Ochrana osobních údajů</a><a href="#">Obchodní podmínky</a><a href="#kontakt">Kontakt</a>
+          </div><small>© 2026 MonkeyLand. Všechna práva vyhrazena.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,473 @@
+:root {
+    --purple: #ad88c9;
+    --cream: #f2ede4;
+    --dark: #141414
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at 50% 60%, #232323 0%, #141414 70%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px
+}
+
+.container {
+    max-width: 1200px
+}
+
+.site-nav {
+    background: #171717;
+    min-height: 73px
+}
+
+.navbar-brand img,
+.footer-brand img {
+    object-fit: contain
+}
+
+.brand-copy,
+.footer-brand span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15
+}
+
+.brand-copy strong,
+.footer-brand strong {
+    font-size: 21px
+}
+
+.brand-copy small,
+.footer-brand small {
+    font-size: 11px;
+    color: #c6c6c6
+}
+
+.site-nav .nav-link {
+    color: #f4f4f4;
+    font-size: 12px
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+    color: #d6b4e8
+}
+
+.site-nav .nav-link.active {
+    border-bottom: 2px solid var(--purple)
+}
+
+.site-nav .drawer {
+    --bs-drawer-bg: #202020
+}
+
+.nav-actions a {
+    white-space: nowrap;
+    text-decoration: none
+}
+
+.btn-purple {
+    background: var(--purple);
+    color: white;
+    border-color: transparent;
+    font-weight: 700
+}
+
+.btn-purple:hover {
+    background: #946caf
+}
+
+.contact-button,
+.hero-secondary {
+    border: 1px solid #c9c9c9;
+    color: #fff;
+    padding: 9px 19px;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.hero {
+    min-height: 294px;
+    background: linear-gradient(90deg, rgba(10, 10, 10, .87) 0%, rgba(10, 10, 10, .67) 36%, rgba(10, 10, 10, .05) 70%), url('/images/SquirrelMonkey_447002978-copy.webp') center 44%/cover no-repeat;
+    border-radius: 0 0 18px 18px
+}
+
+.hero-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 294px
+}
+
+.hero-copy {
+    max-width: 520px;
+    padding: 26px 0
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #e7b578;
+    margin: 0 0 6px
+}
+
+.hero h1 {
+    font-size: clamp(35px, 3.4vw, 50px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.03;
+    margin: 0 0 14px
+}
+
+.hero h1 span {
+    color: #c29cdb
+}
+
+.hero-description {
+    font-size: 15px;
+    line-height: 1.35;
+    max-width: 440px;
+    margin-bottom: 15px
+}
+
+.hero-note {
+    position: absolute;
+    right: 0;
+    top: 43%;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #f0d4c3;
+    transform: rotate(-8deg)
+}
+
+.hero-note i {
+    display: block;
+    font-size: 26px;
+    color: #e3b7d2
+}
+
+.main-content {
+    position: relative;
+    margin-top: 8px
+}
+
+.intro-panel {
+    background: linear-gradient(135deg, #f3eee4, #e9e2d7);
+    color: #1b1b1b;
+    border-radius: 13px;
+    padding: 22px 24px
+}
+
+.intro-panel h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 17px
+}
+
+.intro-panel h2 i {
+    margin-right: 7px
+}
+
+.about-column {
+    border-right: 1px solid #ded8d0;
+    padding-right: 26px
+}
+
+.about-column>p {
+    font-size: 13px;
+    line-height: 1.65;
+    max-width: 345px
+}
+
+.about-features {
+    margin-top: 31px
+}
+
+.about-features .col-4 {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.about-features i {
+    font-size: 24px
+}
+
+.about-features span {
+    font-size: 10px;
+    line-height: 1.3
+}
+
+.all-animals {
+    font-size: 11px;
+    color: #333;
+    white-space: nowrap
+}
+
+.monkey-card {
+    border: 1px solid #e0d9ce;
+    border-radius: 10px;
+    overflow: hidden;
+    background: transparent;
+    color: #1c1c1c;
+    box-shadow: 0 2px 5px #0000000a
+}
+
+.monkey-photo {
+    height: 100px;
+    position: relative
+}
+
+.monkey-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.status {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    border-radius: 20px;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.free {
+    background: #68aa51
+}
+
+.reserved {
+    background: #d9913d
+}
+
+.home {
+    background: #9172af
+}
+
+.monkey-card .card-body {
+    padding: 10px
+}
+
+.monkey-card h3 {
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 2px
+}
+
+.monkey-card p {
+    font-size: 10px;
+    margin-bottom: 8px
+}
+
+.monkey-detail {
+    display: inline-block;
+    text-align: center;
+    min-width: 76px;
+    padding: 4px 13px;
+    font-size: 11px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #1b1b1b;
+    color: #fff
+}
+
+.benefits-panel {
+    background: #202020;
+    border: 1px solid #343434;
+    border-radius: 13px;
+    padding: 22px 25px;
+    margin-top: 14px
+}
+
+.benefits-panel h2 {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 4px
+}
+
+.benefits-panel p {
+    font-size: 13px;
+    color: #ddd;
+    margin: 0
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-height: 44px;
+    border-left: 1px solid #444;
+    padding-left: 18px
+}
+
+.benefit>i {
+    font-size: 29px;
+    color: #bd96d8
+}
+
+.benefit strong,
+.benefit small {
+    display: block
+}
+
+.benefit strong {
+    font-size: 11px
+}
+
+.benefit small {
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 3px
+}
+
+.lower-section {
+    margin-top: 4px;
+    margin-bottom: 16px
+}
+
+.lower-heading {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 12px
+}
+
+.lower-heading i {
+    font-size: 28px
+}
+
+.review-card {
+    background: #242424;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 17px;
+    min-height: 130px
+}
+
+.review-avatar {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0
+}
+
+.review-card p {
+    font-size: 11px;
+    line-height: 1.55;
+    color: #e1e1e1;
+    margin-bottom: 7px
+}
+
+.review-card small {
+    font-size: 11px;
+    color: #ccc
+}
+
+.contact-heading {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 9px 0 17px;
+    white-space: nowrap
+}
+
+.contact-heading i {
+    margin-right: 8px
+}
+
+.lower-section .col-lg-5 p {
+    font-size: 11px;
+    margin-bottom: 16px;
+    white-space: nowrap
+}
+
+.lower-section .col-lg-5 p i {
+    color: #c39cdd;
+    margin-right: 9px
+}
+
+.contact-form {
+    background: #252525;
+    border-radius: 12px;
+    padding: 12px
+}
+
+.contact-form .form-control {
+    background: #303030;
+    color: #fff;
+    border: 1px solid #505050;
+    font-size: 11px;
+    padding: 8px 10px;
+    margin-bottom: 6px
+}
+
+.contact-form .form-control::placeholder {
+    color: #bdbdbd
+}
+
+.contact-form .form-control:focus {
+    background: #303030;
+    color: white;
+    border-color: #b58ad2;
+    box-shadow: 0 0 0 2px #b58ad233
+}
+
+.contact-form button {
+    padding: 7px
+}
+
+.site-footer {
+    background: #191919;
+    border: 1px solid #353535;
+    border-radius: 20px 20px 0 0;
+    padding: 19px 0;
+    margin-top: 5px
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 15px
+}
+
+.social-links a:hover,
+.footer-legal a:hover {
+    color: #c39cdd
+}
+
+.footer-legal a {
+    font-size: 10px;
+    color: #eee;
+    text-decoration: none;
+    margin-left: 10px
+}
+
+.footer-legal small {
+    display: block;
+    margin-top: 8px;
+    font-size: 10px;
+    color: #aaa
+}
