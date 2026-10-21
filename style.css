@@ -97,9 +97,15 @@ body {
 
 .hero {
     min-height: 294px;
-    background: linear-gradient(90deg, rgba(10, 10, 10, .87) 0%, rgba(10, 10, 10, .67) 36%, rgba(10, 10, 10, .05) 70%), url('/images/SquirrelMonkey_447002978-copy.webp') center 44%/cover no-repeat;
+    background: linear-gradient(90deg, rgba(10, 10, 10, .87) 0%, rgba(10, 10, 10, .67) 36%, rgba(10, 10, 10, .05) 70%), url('/images/SquirrelMonkey_447002978-copy.webp') center 20%/cover no-repeat;
     border-radius: 0 0 18px 18px
 }
+.hero-zvirata {
+    min-height: 294px;
+    background: linear-gradient(90deg, rgba(10, 10, 10, .87) 0%, rgba(10, 10, 10, .67) 36%, rgba(10, 10, 10, .05) 70%), url('/images/Zvědavé\ mládě\ opice\ na\ stromě.png') center 20%/cover no-repeat;
+    border-radius: 0 0 18px 18px
+}
+
 
 .hero-inner {
     position: relative;
@@ -109,6 +115,10 @@ body {
 }
 
 .hero-copy {
+    max-width: 520px;
+    padding: 26px 0
+}
+.hero-zvirata-copy {
     max-width: 520px;
     padding: 26px 0
 }
